@@ -1,0 +1,45 @@
+// partials/_main.scss
+
+main {
+  padding-top: $menu_height;
+
+  // Main title
+  .main_title {
+    margin:0 0 50px 0;
+
+    // Top title
+    .top_title > h4 {
+      font-family: $primary_font;
+      color: $quinternary_text_color;
+      font-size: $small_text_size;
+      @include main_top_title;
+    }
+
+    // Sub title
+    .sub_title > h3 {
+      font-family: $secondary_font;
+      color: $qaternary_background;
+      font-size: $h3_text_size;
+      @include main_sub_title;
+    }
+  }
+  
+  // VIEW NEW SUITES
+  .anteprima{
+    #output,#output1,#output2,#output3{
+      margin: auto;
+      max-width: fit-content;
+    }
+  }
+
+  .invia{
+    .btn{
+      background: #cf4532;
+      padding: 10px 20px;
+      color:  #F6F4F2;
+      &:hover{
+        background: #8b0000;
+      }
+    }
+  }
+}

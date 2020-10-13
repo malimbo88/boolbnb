@@ -1,0 +1,48 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'partials/_mixin';
+@import 'partials/_variables';
+
+// General partials
+@import 'partials/_common';
+@import 'partials/_header';
+@import 'partials/_main';
+@import 'partials/_footer';
+
+// Algolia style
+@import 'partials/_algolia';
+
+// Jumbotron
+@import 'partials/_jumbotron';
+
+// Search
+@import 'partials/_search';
+
+// Suites Cards
+@import 'partials/_suites_cards';
+
+// Show
+@import 'partials/_show';
+
+// Form partials
+@import 'partials/forms/_common';
+@import 'partials/forms/_register_login';
+@import 'partials/forms/_login';
+@import 'partials/forms/_register';
+
+// Create suites
+@import 'partials/_create_suites';
+
+// Messages
+@import 'partials/_messages';
+
+// My Suites
+@import 'partials/_my_suites';
+
+// FAQs
+@import 'partials/_faq';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';

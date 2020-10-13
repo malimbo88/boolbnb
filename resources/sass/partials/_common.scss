@@ -1,0 +1,110 @@
+// partials/_common.scss
+
+// Reset
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Button Reset
+button {
+  border: none;
+}
+
+button:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+
+// Form
+.form-control:focus, .form-control:focus {
+  border-color: $secondary_background;
+  outline: 0;
+  box-shadow: 0 0 0;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+a.badge.badge-primary:focus, a.badge.badge-primary.focus {
+  outline: 0;
+  box-shadow: 0 0 0;
+  -ms-transform: scale(0.98,0.98); /* IE 9 */
+  transform: scale(0.98,0.98); /* Standard syntax */
+}
+
+button.btn-home{
+  background: #cf4532;
+  color: #F6F4F2;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  &:hover{
+    background: #8b0000;
+  }
+
+  a{
+    color: #F6F4F2;
+    text-decoration: none;
+  }
+}
+
+// General
+img {
+  width: 100%;
+  display: block;
+}
+
+// Main wrapper
+.main_wrapper {
+  @include main_wrapper;
+}
+
+.ap-input {
+  background-color: red;
+}
+
+
+// modal loading
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     50%;
+    width:      50%;
+    background: rgba( 255, 255, 255, .8 )
+                url('https://flevix.com/wp-content/uploads/2019/07/Q-Loading.gif')
+                // url('https://i.pinimg.com/originals/ed/23/68/ed23685339ada1b6d88008cbe1a11e98.gif')
+                50% 50%
+                no-repeat;
+    background-size: 40%;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
